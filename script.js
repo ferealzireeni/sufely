@@ -1,4 +1,4 @@
-const GOOGLE_SCRIPT_URL = "";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzLoqN_stnwTkvMxafxD0j9Nonu8e0FK9w0L4s_xtPAcL27Egg-TjYbxQrd-mfBOuFfxQ/exec";
 
 const form = document.querySelector("#early-access-form");
 const statusEl = document.querySelector("#form-status");
