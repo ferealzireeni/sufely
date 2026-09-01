@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#151022" />
+    <meta
+      name="description"
+      content="SUFELY is coming soon. Request early access to the intelligent valet parking platform."
+    />
+    <title>SUFELY | Coming Soon</title>
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+    <link rel="apple-touch-icon" href="./assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <nav class="nav">
+        <a class="brand" href="#" aria-label="SUFELY home">
+          <img src="./assets/sufely-logo.png" alt="SUFELY" />
+        </a>
+      </nav>
+
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy reveal-group">
+          <p class="eyebrow">Intelligent valet infrastructure</p>
+          <h1 id="hero-title">Parking is about to feel invisible.</h1>
+          <p class="hero-text">
+            SUFELY connects guests, valet teams, vehicles, and venues into one smooth
+            arrival-to-departure experience.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-link" href="#early-access">Request Early Access</a>
+            <span class="launch-pill">Launching soon</span>
+          </div>
+        </div>
+
+        <div class="product-scene reveal-card" aria-label="SUFELY platform preview">
+          <div class="scene-header">
+            <span>SUFELY AI</span>
+            <strong>Live Flow</strong>
+          </div>
+          <div class="scene-map">
+            <span class="map-tag lobby">Lobby</span>
+            <span class="map-tag bay">Bay B2</span>
+            <span class="map-route"></span>
+            <span class="map-scan"></span>
+            <span class="map-glow"></span>
+            <span class="route-particle p1"></span>
+            <span class="route-particle p2"></span>
+            <span class="route-particle p3"></span>
+            <span class="radar-ring r1"></span>
+            <span class="radar-ring r2"></span>
+            <span class="map-node start"></span>
+            <span class="map-node end"></span>
+            <span class="mini-car c1">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12 7.1 7.2A3 3 0 0 1 9.8 5.4h4.4a3 3 0 0 1 2.7 1.8L19 12m-15 0h16v4.5H4V12Z" />
+              </svg>
+            </span>
+            <span class="mini-car c2">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12 7.1 7.2A3 3 0 0 1 9.8 5.4h4.4a3 3 0 0 1 2.7 1.8L19 12m-15 0h16v4.5H4V12Z" />
+              </svg>
+            </span>
+            <span class="car-chip">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12 7.1 7.2A3 3 0 0 1 9.8 5.4h4.4a3 3 0 0 1 2.7 1.8L19 12m-15 0h16v5.5a1.5 1.5 0 0 1-1.5 1.5H17a1.5 1.5 0 0 1-1.5-1.5v-.5h-7v.5A1.5 1.5 0 0 1 7 19H5.5A1.5 1.5 0 0 1 4 17.5V12Zm3.5 2.5h.1m8.8 0h.1" />
+              </svg>
+            </span>
+          </div>
+          <div class="scene-metrics">
+            <div><span>ETA</span><strong data-count="8" data-suffix="m">08m</strong></div>
+            <div><span>Queue</span><strong data-count="12">12</strong></div>
+            <div><span>Valets</span><strong data-count="6" data-pad="2">06</strong></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof-strip reveal-on-scroll" aria-label="Platform highlights">
+        <div>
+          <span>01</span>
+          <strong>Mobile app + QR</strong>
+          <p>Guests can request through the app or a venue QR link.</p>
+        </div>
+        <div>
+          <span>02</span>
+          <strong>Valet dispatch</strong>
+          <p>Live queue visibility for operators.</p>
+        </div>
+        <div>
+          <span>03</span>
+          <strong>Venue intelligence</strong>
+          <p>Arrival and departure data in one place.</p>
+        </div>
+      </section>
+
+      <section class="access-section" id="early-access" aria-labelledby="access-title">
+        <div class="access-copy reveal-on-scroll">
+          <p class="eyebrow">Coming soon</p>
+          <h2 id="access-title">Request Early Access</h2>
+          <p>
+            Join the first SUFELY partner list for launch updates, venue onboarding,
+            and early product access.
+          </p>
+        </div>
+
+        <form class="access-form reveal-on-scroll" id="early-access-form">
+          <div class="form-grid">
+            <label>
+              <span>Full name</span>
+              <input name="name" autocomplete="name" placeholder="Sam Barazi" required />
+            </label>
+            <label>
+              <span>Work email</span>
+              <input name="email" type="email" autocomplete="email" placeholder="name@company.com" required />
+            </label>
+            <label>
+              <span>Company</span>
+              <input name="company" autocomplete="organization" placeholder="Your venue or valet company" required />
+            </label>
+            <label>
+              <span>Role</span>
+              <select name="role" required>
+                <option value="">Select role</option>
+                <option>Venue owner / operator</option>
+                <option>Valet company</option>
+                <option>Hotel / hospitality</option>
+                <option>Real estate / mall</option>
+                <option>Investor / partner</option>
+                <option>Other</option>
+              </select>
+            </label>
+          </div>
+          <label>
+            <span>Message</span>
+            <textarea
+              name="message"
+              rows="4"
+              placeholder="Tell us what you want to improve about valet parking."
+            ></textarea>
+          </label>
+          <input type="hidden" name="source" value="sufely-coming-soon-website" />
+          <button class="submit-button" type="submit">Submit Request</button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+      </section>
+
+      <footer class="site-footer reveal-on-scroll">
+        <div class="footer-brand">
+          <img src="./assets/sufely-logo.png" alt="SUFELY" />
+          <p>Intelligent valet infrastructure for venues, operators, and guests.</p>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 SUFELY. All rights reserved.</span>
+          <div class="social-links" aria-label="Social media links">
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M14 8h2V4h-2c-3.3 0-5 2-5 5v3H6v4h3v4h4v-4h3l1-4h-4V9c0-.7.3-1 1-1Z" />
+              </svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="4" y="4" width="16" height="16" rx="5" />
+                <circle cx="12" cy="12" r="3.5" />
+                <path d="M16.8 7.2h.01" />
+              </svg>
+            </a>
+            <a href="#" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M14 4v10.2a4.2 4.2 0 1 1-4.2-4.2" />
+                <path d="M14 4c.7 3 2.6 4.8 5.5 5.1" />
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/company/sufely" aria-label="LinkedIn" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6.5 10v8" />
+                <path d="M10.5 18v-8" />
+                <path d="M10.5 13.5c0-2.1 1.3-3.5 3.4-3.5 2 0 3.1 1.3 3.1 3.5V18" />
+                <path d="M6.5 6.2v.1" />
+              </svg>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4.5 8.5c.2-1.2 1.1-2.1 2.3-2.3C8.8 6 12 6 12 6s3.2 0 5.2.2c1.2.2 2.1 1.1 2.3 2.3.2 1.3.2 3.5.2 3.5s0 2.2-.2 3.5c-.2 1.2-1.1 2.1-2.3 2.3C15.2 18 12 18 12 18s-3.2 0-5.2-.2c-1.2-.2-2.1-1.1-2.3-2.3-.2-1.3-.2-3.5-.2-3.5s0-2.2.2-3.5Z" />
+                <path d="m10.5 9.5 4 2.5-4 2.5v-5Z" />
+              </svg>
+            </a>
+            <a href="#" aria-label="X">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m4 4 11.2 16H20L8.8 4H4Z" />
+                <path d="M4 20 10.7 13" />
+                <path d="M13.3 11 20 4" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
