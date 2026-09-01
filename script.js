@@ -1,4 +1,4 @@
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwR7mjre98jZzJdMtrxgJiK6qALP42ayl-PfcwNvmDDVsXws0FctNlpOuGLUKK_SRgIVA/exec";
+const GOOGLE_SCRIPT_URL = "";
 
 const form = document.querySelector("#early-access-form");
 const statusEl = document.querySelector("#form-status");
@@ -8,10 +8,6 @@ const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").match
 function setStatus(message, type = "") {
   statusEl.textContent = message;
   statusEl.className = `form-status${type ? ` is-${type}` : ""}`;
-}
-
-function serializeForm(targetForm) {
-  return Object.fromEntries(new FormData(targetForm).entries());
 }
 
 form.addEventListener("submit", async (event) => {
@@ -27,18 +23,13 @@ form.addEventListener("submit", async (event) => {
   setStatus("Sending your request...");
 
   try {
-    const payload = {
-      ...serializeForm(form),
-      submittedAt: new Date().toISOString(),
-    };
+    const payload = new FormData(form);
+    payload.append("submittedAt", new Date().toISOString());
 
     await fetch(GOOGLE_SCRIPT_URL, {
       method: "POST",
       mode: "no-cors",
-      headers: {
-        "Content-Type": "text/plain;charset=utf-8",
-      },
-      body: JSON.stringify(payload),
+      body: payload,
     });
 
     form.reset();
